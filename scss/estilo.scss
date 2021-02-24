@@ -1,0 +1,116 @@
+
+$section-padding: 120px 0;
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background: rgba(155, 150, 150, 0.671);
+}
+
+
+section {
+    padding: $section-padding;
+}
+
+h1 { font-size: 48px; margin-bottom: 30px;}
+
+p {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+    /* Header */
+@import "header";
+
+    /* Main */
+@import "main";
+
+    /* Footer */
+@import "footer";
+
+    /* Contact */
+@import "contact";
+
+    /* About */
+@import "about";
+
+    /* News.html */
+@import "news";
+
+/* Media Query */
+
+@media (max-width: 575.98px) { 
+
+    .banner {
+        padding-top: 36%;
+        padding-left: 2%;
+        width: 100%;
+    }
+
+    .footer-menu {
+        display: block !important;
+        padding: 20px 0 !important;
+        font-size: 20px;
+    }
+
+    .card-deck {
+        padding-top: 40%;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px){
+
+    .banner {
+        padding-top: 24%;
+        width: 100%;
+    }
+
+    .card-deck {
+        padding-top: 30%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .banner {
+        padding-top: 22%;
+        padding-left: 2%;
+        width: 100%;
+    }
+
+    .portfolio__container {
+        display: list-item;
+    }
+
+    .card-deck {
+        padding-top: 25%;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .banner {
+        padding-top: 15%;
+        width: 100%;
+    }
+
+    .card-deck {
+        padding-top: 5%;
+    }
+}
+
+
+@media (min-width: 1200px){
+}

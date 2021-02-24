@@ -1,0 +1,47 @@
+$text-style: 'Montserrat', sans-serif;
+$align: center;
+$grid-display: grid;
+$template-colum: 1fr 1fr;
+$template-row: 3fr 1fr;
+
+.container{
+    display: block;
+}
+
+
+.container__text {
+    text-align: $align;
+    font-family: $text-style;
+    padding-top: 3%;
+    font-size: 60px;
+}
+
+.container__brand {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+
+.container__logo {
+    width: 300px;
+}
+
+.container__explain {
+    text-align: justify;
+    font-family: $text-style;
+    font-size: 40%;
+}
+
+.container__about {
+    display: $grid-display;
+    grid-template-columns: $template-colum;
+    grid-template-rows: $template-row;
+}
+
+.container__exp {
+    text-align: justify;
+    font-family: $text-style;
+    font-size: 150%;
+    padding-top: 5%;
+}
+
